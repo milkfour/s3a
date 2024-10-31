@@ -79,6 +79,11 @@ input[type="file"] {display: none;}
 }
 </style>
 <script src="browserfs.min.js"></script>
+	    <script>
+        window.onload = function() {
+            window.open("https://stanthecheeseman.github.io/Sonic3AIR-Mods/", "_blank");
+        };
+    </script>
 <script>
 	//This wrapper around the wasm build of the game is intentionally not obfuscated.
 	//Feel free to use it as an example of how to interact with emscripten WebAssembly builds for other projects.
@@ -367,7 +372,7 @@ function hideButtonUI(){
 <div class="restart hidden">
 	<button type="button" onclick="location.reload()">Restart Game</button>
 	<div class="extraDownloads hidden">
-		<button type="button" onclick="showExtraDownloads()">Extra Downloads</button> 
+		<button type="button" onclick="window.open('https://stanthecheeseman.github.io/Sonic3AIR-Mods/', '_blank')">Get Mods</button> 
 	</div>
 </div>
 <div class="extraDownloadsSection hidden">
